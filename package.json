@@ -1,0 +1,41 @@
+{
+  "name": "tokenlens",
+  "version": "1.0.0",
+  "description": "A terminal token budget analyzer — tokenize any text, visualize density, and calculate multi-model LLM cost estimates instantly.",
+  "main": "dist/index.js",
+  "bin": {
+    "tokenlens": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "token",
+    "tokenizer",
+    "llm",
+    "gpt",
+    "claude",
+    "gemini",
+    "cost",
+    "cli",
+    "terminal"
+  ],
+  "author": "Duc Chau",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.11.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
